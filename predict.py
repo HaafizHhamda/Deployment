@@ -56,19 +56,19 @@ def run():
         # --- Kategori
         time_of_day = st.selectbox(
             'Time_of_Day',
-            options=['Morning', 'Afternoon', 'Evening', 'Night']
+            options=['Morning', 'Afternoon', 'Evening', 'Night','Unknown']
         )
         day_of_week = st.selectbox(
             'Day_of_Week',
-            options=['Weekday', 'Weekend']
+            options=['Weekday', 'Weekend','Unknown']
         )
         traffic = st.selectbox(
             'Traffic_Conditions',
-            options=['Low', 'Medium', 'High']
+            options=['Low', 'Medium', 'High','Unknown']
         )
         weather = st.selectbox(
             'Weather',
-            options=['Clear', 'Rainy', 'Unknown']
+            options=['Clear', 'Rain', 'Unknown']
         )
 
         submit = st.form_submit_button('Predict')
