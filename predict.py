@@ -68,7 +68,7 @@ def run():
         )
         weather = st.selectbox(
             'Weather',
-            options=['Clear', 'Cloudy', 'Rainy', 'Snowy', 'Unknown']
+            options=['Clear', 'Rainy', 'Unknown']
         )
 
         submit = st.form_submit_button('Predict')
